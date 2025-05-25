@@ -31,6 +31,8 @@ project/
 │       └── val/
 |----generated_images          #it contain label images
 |----generated_labels          #it contain txt labels
+|----centroids/
+|    |-Raw_Observation_006_Set1.csv # it contain centroid coordinate
 |----runs/
 |     |--detect/
 |        |--predect/
