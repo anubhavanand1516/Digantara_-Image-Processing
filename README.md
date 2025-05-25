@@ -61,6 +61,8 @@ image_folder = "/path/to/Reference_Images"
 label_folder = "/path/to/generated_labels"
 debug_folder = "/path/to/generated_images"
 ```
+![Raw_Observation_001_Set1](https://github.com/user-attachments/assets/044690df-8a99-48d6-bfad-a8f35daab794)
+
 
 ---
 
@@ -106,35 +108,26 @@ pip install ultralytics
 
 Run training:
 ```bash
-yolo detect train   model=yolov8n.pt   data=yolov8_config.yaml   epochs=50   imgsz=640   batch=16   name=star_streak_yolov8
+python train.py
 ```
 
 > You can use `yolov8s.pt`, `yolov8m.pt` for larger models.
 
 ---
 
-## 📈 Step 5: Evaluate Model
-
-```bash
-yolo detect val   model=runs/detect/star_streak_yolov8/weights/best.pt   data=yolov8_config.yaml
-```
-
-This evaluates the model on your validation set.
-
----
-
 ## 🔍 Step 6: Run Inference
 
 ```bash
-yolo detect predict   model=runs/detect/star_streak_yolov8/weights/best.pt   source=/path/to/test/images   save=True
+python test.py
 ```
 
 Predicted images will be saved to:
 ```
 runs/detect/predict/
 ```
-
 ---
+![Raw_Observation_006_Set1](https://github.com/user-attachments/assets/ff97528e-694a-453e-ac5f-99d2a7789998)
+
 
 
 
