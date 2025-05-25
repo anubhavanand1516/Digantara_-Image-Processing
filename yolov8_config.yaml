@@ -1,0 +1,8 @@
+# dataset.yaml
+path: /absolute/path/to/project
+train: /Users/anubhavanand/Desktop/project/datasets/images/train
+val: /Users/anubhavanand/Desktop/project/datasets/images/val
+
+nc: 2  # Number of classes
+names: ["star", "streak"]
+
