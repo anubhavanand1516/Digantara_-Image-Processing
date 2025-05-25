@@ -29,6 +29,16 @@ project/
 │   └── labels/
 │       ├── train/
 │       └── val/
+|----generated_images          #it contain label images
+|----generated_labels          #it contain txt labels
+|----runs/
+|     |--detect/
+|        |--predect/
+|            |--lables         #predect labels with classes
+|----yolo_digantara_fast1/     #it contain all the result file 
+|    |--weights/
+|       |-best.pt
+|        |-last.pt
 |----tiff_to_png.py            #script convert tiff to png 
 |----train.py                  #script to train a model
 |----test.py                   #script to test a model
@@ -125,8 +135,14 @@ Predicted images will be saved to:
 ```
 runs/detect/predict/
 ```
----
+
 ![Raw_Observation_006_Set1](https://github.com/user-attachments/assets/ff97528e-694a-453e-ac5f-99d2a7789998)
+
+Centroid coordinates are stored in the centroids folder:
+```
+centroids/Raw_Observation_006_Set1.csv
+```
+---
 
 
 
